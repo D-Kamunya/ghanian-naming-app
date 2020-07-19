@@ -35,7 +35,9 @@ let calcName=()=>{
     }
   })
 
- 
+  //Calculate century and year from birthyear
+  let CC=Number(birthYrVal.slice(0,2))
+  let YY=Number(birthYrVal.slice(2,4))
 }
 
 //butTn click eventlistener
