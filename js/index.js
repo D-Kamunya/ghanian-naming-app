@@ -21,7 +21,10 @@ let yearvalErrors=''
 let mntvalErrors=''
 let dayvalErrors=''
 
-//FN CALLED BY BTN CLICK
-let calcAge=()=>{
+//Fn called by eventlistener
+let calcName=()=>{
 
 }
+
+//butTn click eventlistener
+butTn.addEventListener('click',calcName)
