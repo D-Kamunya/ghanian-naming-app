@@ -90,6 +90,13 @@ let calcName=()=>{
   let valMntt=valMonth()
   let valYr=valYear()
 
+  //Calculate day of week index
+  let dayofWk = Math.floor(( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(birthMntVal+1)/10)) + birthDayVal ) % 7)
+  if(dayofWk===0){
+    dayofWk=6
+  }else{
+    dayofWk--
+  }
 
 
 
