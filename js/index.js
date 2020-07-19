@@ -21,3 +21,7 @@ let yearvalErrors=''
 let mntvalErrors=''
 let dayvalErrors=''
 
+//FN CALLED BY BTN CLICK
+let calcAge=()=>{
+
+}
