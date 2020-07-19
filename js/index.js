@@ -98,8 +98,23 @@ let calcName=()=>{
     dayofWk--
   }
 
-
-
+  //Determine validity and find day of week name
+  if(birthDayVal==='' || birthMntVal==='' || birthYrVal==='' || genderVal===undefined){
+    alert('Please fill all fields')
+  }
+  else if(valDayy && valMntt && valYr){
+    let birthDayName=daysofWk[dayofWk]
+    let AkanName
+    
+    (genderVal==='male'?AkanName=maleAkanNames[dayofWk]:
+    AkanName=femaleAkanNames[dayofWk])
+    console.log(AkanName)
+    console.log(birthDayName)
+  }else{
+    dayvalErrors.length>0?console.log(dayvalErrors):''
+    mntvalErrors.length>0?console.log(mntvalErrors):''
+    yearvalErrors.length>0?console.log(yearvalErrors):''
+  }  
 
 }
 
