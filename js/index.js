@@ -85,6 +85,10 @@ let calcName=()=>{
     }
   }
 
+  //Calling validation fns
+  let valDayy=valDay()
+  let valMntt=valMonth()
+  let valYr=valYear()
 
 
 
