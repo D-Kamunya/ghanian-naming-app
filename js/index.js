@@ -61,6 +61,30 @@ let calcName=()=>{
     }
   }
 
+  //Fn to validate day entered
+  const valDay=()=>{
+    if((Number(birthYrVal)%4)===0 && birthMntVal===2){
+      if(birthDayVal<1 || birthDayVal >29){
+        dayvalErrors="In this year Feb range is 0-29 days"
+        return false
+      }else{
+        return true
+      }
+    }else if(birthMntVal===2){
+      if(birthDayVal<1 ||birthDayVal >28){
+        dayvalErrors="In this year Feb range is 0-28 days"
+        return false
+      }else{
+        return true
+      }
+    }else if(birthDayVal <1 || birthDayVal >31){
+      dayvalErrors="Months range is 0-31 days"
+      return false
+    }else{
+      return true
+    }
+  }
+
 
 
 
