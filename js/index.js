@@ -1,8 +1,8 @@
 //SET DOM ELEMENTS AS VARIABLES
 const butTn=document.getElementById('submitt')
-const birthDay=document.getElementById('birthday')
-const birthMnt=document.getElementById('birthmnt')
-const birthYr=document.getElementById('birthyr')
+const birthDay=document.getElementById('birthDay')
+const birthMnt=document.getElementById('birthMnt')
+const birthYr=document.getElementById('birthYr')
 const genders=document.getElementsByName('gender')
 
 //Set array variables for weekdays names and akan names
