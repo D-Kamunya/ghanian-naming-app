@@ -15,3 +15,9 @@ const maleAkanNames=[
 const femaleAkanNames=[
   "Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"
 ]
+
+//Set errors variables
+let yearvalErrors=''
+let mntvalErrors=''
+let dayvalErrors=''
+
