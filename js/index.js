@@ -50,10 +50,22 @@ let calcName=()=>{
     }
   }
 
+  //Fn to validate month entered
+  const valMonth=()=>{
+    if(birthMntVal<1 || birthMntVal>12){
+      mntvalErrors="There are twelve months in a year"
+      return false
+    }
+    else{
+      return true
+    }
+  }
 
 
 
-  
+
+
+
 }
 
 //butTn click eventlistener
