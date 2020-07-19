@@ -23,7 +23,19 @@ let dayvalErrors=''
 
 //Fn called by eventlistener
 let calcName=()=>{
+  //Get dom elements values
+  let birthDayVal=Number(birthDay.value)
+  let birthMntVal=Number(birthMnt.value)
+  let birthYrVal=birthYr.value
+  let genderVal
 
+  Array.from(genders).map((gender)=>{
+    if(gender.checked){
+      genderVal=gender.value
+    }
+  })
+
+ 
 }
 
 //butTn click eventlistener
