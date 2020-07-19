@@ -38,6 +38,22 @@ let calcName=()=>{
   //Calculate century and year from birthyear
   let CC=Number(birthYrVal.slice(0,2))
   let YY=Number(birthYrVal.slice(2,4))
+
+  //Fn to validate year entered
+  const valYear=()=>{
+    if(birthYrVal.length<4 || birthYrVal.length>4){
+      yearvalErrors="Years have 4 digits"
+      return false
+    }
+    else{
+      return true
+    }
+  }
+
+
+
+
+  
 }
 
 //butTn click eventlistener
