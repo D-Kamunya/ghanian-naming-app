@@ -104,7 +104,7 @@ let calcName=()=>{
   }
 
   results.innerHTML=''
-  
+  results.style.display = "none"
   //Determine validity and find day of week name
   if(birthDayVal==='' || birthMntVal==='' || birthYrVal==='' || genderVal===undefined){
     alert('Please fill all fields')
@@ -117,7 +117,7 @@ let calcName=()=>{
     AkanName=femaleAkanNames[dayofWk])
 
     results.innerHTML='Your were born on '+birthDayName+' and your Akan Name is '+AkanName
-   
+    results.style.display = "block"
     console.log(AkanName)
     console.log(birthDayName)
   }else{
