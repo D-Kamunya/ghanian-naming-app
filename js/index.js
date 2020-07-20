@@ -1,10 +1,11 @@
 //SET DOM ELEMENTS AS VARIABLES
+const formm=document.getElementById('form')
 const butTn=document.getElementById('submitt')
 const birthDay=document.getElementById('birthDay')
 const birthMnt=document.getElementById('birthMnt')
 const birthYr=document.getElementById('birthYr')
 const genders=document.getElementsByName('gender')
-
+const results=document.getElementById('results')
 //Set array variables for weekdays names and akan names
 const daysofWk=[
   "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
@@ -21,6 +22,8 @@ let yearvalErrors=''
 let mntvalErrors=''
 let dayvalErrors=''
 
+
+
 //Fn called by eventlistener
 let calcName=()=>{
   //Get dom elements values
@@ -34,6 +37,8 @@ let calcName=()=>{
       genderVal=gender.value
     }
   })
+
+  results.innerHTML=''
 
   //Calculate century and year from birthyear
   let CC=Number(birthYrVal.slice(0,2))
@@ -108,6 +113,9 @@ let calcName=()=>{
     
     (genderVal==='male'?AkanName=maleAkanNames[dayofWk]:
     AkanName=femaleAkanNames[dayofWk])
+
+    results.innerHTML='Your were born on '+birthDayName+' and your Akan Name is '+AkanName
+   
     console.log(AkanName)
     console.log(birthDayName)
   }else{

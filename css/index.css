@@ -5,10 +5,10 @@ body {
   margin: 0;
   text-align: center;
   box-sizing: border-box;
-  
+ 
 }
 #app{
-  height: 100vh;
+  height: 120vh;
   width: 100%;
   position: relative;
   background:rgba(0, 0, 0, 0.8) url(../img/bg.jpg) no-repeat top center;
@@ -24,6 +24,7 @@ body {
   padding-right: 2rem;
   padding-left: 2rem;
 }
-.valid{
-  border: 2px solid green;
+#results{
+  display: block;
+  width: 100%;
 }
