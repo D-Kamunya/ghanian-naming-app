@@ -10,36 +10,46 @@
 <body>
   <div class="container-fluid" id="app">
     <div class="row justify-content-center">
-      <form id="form"  class="mt-5 shadow-lg ">
-        <p id="results"></p>
-        <div class="form-group">
-          <label for="birthDay">Birth Day</label>
-          <input type="number" class="form-control" id="birthDay" name="birthday" placeholder="DD">
-        </div>
-        <div class="form-group">
-          <label for="birthMnt">Birth Month</label>
-          <input type="number" class="form-control" id="birthMnt" name="birthmnt" placeholder="MM">
-        </div>
-        <div class="form-group">
-          <label for="birthYr">Birth Year</label>
-          <input type="number" class="form-control" id="birthYr" name="birthyr" placeholder="YYYY">
-        </div>
-      
-        <div class="form-check">
-          <label for="Gender">Gender</label> <br>
-          <input class="form-check-input" type="radio" name="gender" id="male" value="male" >
-          <label class="form-check-label" for="male">
-            Male
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="gender" id="female" value="female">
-          <label class="form-check-label" for="female">
-            Female
-          </label>
-        </div>
-        <button type="button" id="submitt" class="btn btn-primary">Submit</button>
-      </form>
+      <div class="container col-6 mt-5" id="descrip">
+        <h2>AKAN NAMING SYSTEM</h2>
+        <p>Akan naming system is a website that takes your birthday details and calculates the day of the week you were born and then depending on your gender, outputs your Akan Name. <a  href="https://en.wikipedia.org/wiki/Akan_names" target="_blank">Akan names</a> are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born.
+        </p>
+        <p>To find your Akan name fill the form and click submit</p>
+      </div> 
+      <div class="container col-6">
+        <form id="form" class="mt-5 shadow-lg ">
+          <div id="results">
+          <p id="result"></p>
+          </div>
+          <div class="form-group">
+            <label for="birthDay">Birth Day</label>
+            <input type="number" class="form-control" id="birthDay" name="birthday" placeholder="DD">
+          </div>
+          <div class="form-group">
+            <label for="birthMnt">Birth Month</label>
+            <input type="number" class="form-control" id="birthMnt" name="birthmnt" placeholder="MM">
+          </div>
+          <div class="form-group">
+            <label for="birthYr">Birth Year</label>
+            <input type="number" class="form-control" id="birthYr" name="birthyr" placeholder="YYYY">
+          </div>
+        
+          <div class="form-check">
+            <label for="Gender">Gender</label> <br>
+            <input class="form-check-input" type="radio" name="gender" id="male" value="male" >
+            <label class="form-check-label" for="male">
+              Male
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+            <label class="form-check-label" for="female">
+              Female
+            </label>
+          </div>
+          <button type="button" id="submitt" class="btn btn-primary">Submit</button>
+        </form>
+      </div>  
     </div>
   </div>
    

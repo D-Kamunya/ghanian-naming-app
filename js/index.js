@@ -5,7 +5,7 @@ const birthDay=document.getElementById('birthDay')
 const birthMnt=document.getElementById('birthMnt')
 const birthYr=document.getElementById('birthYr')
 const genders=document.getElementsByName('gender')
-const results=document.getElementById('results')
+const results=document.getElementById('result')
 //Set array variables for weekdays names and akan names
 const daysofWk=[
   "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"

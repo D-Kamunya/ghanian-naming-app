@@ -25,6 +25,25 @@ body {
   padding-left: 2rem;
 }
 #results{
-  display: block;
-  width: 100%;
+  display:inline-block;
 }
+#results p{
+  color: green;
+  font-weight: bolder;
+  font-size: 20px;
+}
+#descrip{
+  background-color: rgba(0, 0, 0, 0.5);;
+}
+#descrip h2{
+  color: #000;
+  font: 30px "Nothing You Could Do", cursive;
+  margin-bottom: 10px;
+  margin-top: 0px;
+ }
+ #descrip p{
+  color: #fff;
+  margin-bottom: 10px;
+  margin-top: 0px;
+  letter-spacing: 2px;
+ }
