@@ -38,7 +38,7 @@ let calcName=()=>{
     }
   })
 
-  results.innerHTML=''
+  
 
   //Calculate century and year from birthyear
   let CC=Number(birthYrVal.slice(0,2))
@@ -103,6 +103,8 @@ let calcName=()=>{
     dayofWk--
   }
 
+  results.innerHTML=''
+  
   //Determine validity and find day of week name
   if(birthDayVal==='' || birthMntVal==='' || birthYrVal==='' || genderVal===undefined){
     alert('Please fill all fields')
