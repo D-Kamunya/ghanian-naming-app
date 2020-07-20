@@ -21,7 +21,7 @@ You will input your details by typing your birthday,birth month and birth year d
 ## Contribution
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 ## Support and contact details
-If you run into any problems feel free to contact me
+If you run into any problems feel free to contact me @dennismuriithik@gmail.com
 #### License
 [![license](https://img.shields.io/github/license/DAVFoundation/captain-n3m0.svg?style=flat-square)](https://github.com/DAVFoundation/captain-n3m0/blob/master/LICENSE)
 
