@@ -6,6 +6,9 @@ const birthMnt=document.getElementById('birthMnt')
 const birthYr=document.getElementById('birthYr')
 const genders=document.getElementsByName('gender')
 const results=document.getElementById('result')
+const bd=document.getElementById('bd')
+const bm=document.getElementById('bm')
+const by=document.getElementById('by')
 //Set array variables for weekdays names and akan names
 const daysofWk=[
   "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
@@ -66,6 +69,10 @@ let calcName=()=>{
     }
   }
 
+  //Empty old error vars
+  yearvalErrors=''
+  mntvalErrors=''
+  dayvalErrors=''
   //Fn to validate day entered
   const valDay=()=>{
     if((Number(birthYrVal)%4)===0 && birthMntVal===2){
@@ -102,9 +109,13 @@ let calcName=()=>{
   }else{
     dayofWk--
   }
-
+  
   results.innerHTML=''
   results.style.display = "none"
+ 
+  bd.innerHTML=''
+  bm.innerHTML=''
+  by.innerHTML=''
   //Determine validity and find day of week name
   if(birthDayVal==='' || birthMntVal==='' || birthYrVal==='' || genderVal===undefined){
     alert('Please fill all fields')
@@ -121,9 +132,9 @@ let calcName=()=>{
     console.log(AkanName)
     console.log(birthDayName)
   }else{
-    dayvalErrors.length>0?console.log(dayvalErrors):''
-    mntvalErrors.length>0?console.log(mntvalErrors):''
-    yearvalErrors.length>0?console.log(yearvalErrors):''
+    dayvalErrors.length>0?bd.innerHTML=dayvalErrors:''
+    mntvalErrors.length>0?bm.innerHTML=mntvalErrors:''
+    yearvalErrors.length>0?by.innerHTML=yearvalErrors:''
   }  
 
 }
